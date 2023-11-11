@@ -184,7 +184,7 @@ ol {
   display: none;
   width: 15px;
   height: 15px;
-  position: absolute;
+  position: relative;
   background-color: #FFF;
   top: 1.3px;
   left: 1px;
