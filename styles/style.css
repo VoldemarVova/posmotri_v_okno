@@ -41,7 +41,7 @@ ol {
 }
 
 .content {
-  min-width: 1140px;
+  width: 1140px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -146,7 +146,7 @@ ol {
   align-items: center;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
