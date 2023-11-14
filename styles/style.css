@@ -41,7 +41,7 @@ ol {
 }
 
 .content {
-  width: 1140px;
+  min-width: 1140px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -51,7 +51,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
-  overflow-y: auto;
+  overflow: auto;
   overflow-x: hidden;
   padding: 3px;
 }
@@ -67,7 +67,7 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
-  padding: 2px;
+  padding: 2px 0;
 }
 
 .content__video-card-thumbnail {
@@ -90,6 +90,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  max-width: 184px;
 }
 
 .content__card-link {
@@ -126,7 +127,7 @@ ol {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin: 3px 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -145,7 +146,7 @@ ol {
   align-items: center;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: underline;
 }
 
@@ -193,6 +194,7 @@ ol {
   font-weight: 400;
 }
 
+
 .search-form__textfield:focus {
   outline: none;
 }
@@ -225,6 +227,10 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox:after {
+  display: block;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox:after {
   display: block;
 }
 
