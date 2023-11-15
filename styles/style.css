@@ -67,6 +67,7 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 2px 0;
 }
 
